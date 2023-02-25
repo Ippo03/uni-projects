@@ -241,7 +241,7 @@ s5:
 	syscall
 	
 	#go to exit
-    j exit				
+    	j exit				
 	
 s6:
 	#Emafanise mynhma 6

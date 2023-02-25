@@ -12,14 +12,14 @@ main:
 	li $t2,0							
   			
 	#print mhnyma 1
-    li $v0,4							
-    la $a0, input_prompt
-    syscall
+    	li $v0,4							
+    	la $a0, input_prompt
+    	syscall
 	
 read_token: 
 	#read ch(char) 
-    li $v0, 12							
-    syscall
+    	li $v0, 12							
+    	syscall
 	
 	#load ch in $t1
 	sh $v0,ch							
@@ -45,7 +45,7 @@ digit:
 	
 	#read next ch
 	li $v0,12							
-    syscall
+    	syscall
 	
 	#load ch in $t1
 	sh $v0,ch							
@@ -67,20 +67,23 @@ operator:
 	#call pop function
 	jal pop		
 	#x2= pop()
-    move $t6, $v0	
+    	move $t6, $v0	
+
 	#call pop function
-    jal pop	
+    	jal pop	
 	#x1= pop()
-    move $t7, $v0
+    	move $t7, $v0
+
 	#calc arguments
 	#x2
 	move $a0, $t6 
 	#ch
-    move $a1, $t1
+    	move $a1, $t1
 	#x1
-    move $a2, $t7 
+    	move $a2, $t7 
 	#call calc function
-    jal calc
+    	jal calc
+
 	#return value of calc->argument for push
 	move $a0,$v0
 	#call push function
@@ -101,15 +104,16 @@ not_equal:
 final:
 	#if stack has one value print else goto label invalid
 	bne $t2,1,invalid
+
 	#print mynhma 5
 	li $v0, 4							
-    la $a0, output_msg
-    syscall
+    	la $a0, output_msg
+    	syscall
 	
 	#load and print value at the top of the stack
-    lw $a0,0($sp)						
-    li $v0,1							
-    syscall
+    	lw $a0,0($sp)						
+    	li $v0,1							
+    	syscall
 	
 	#goto exit
 	j exit 								
@@ -118,11 +122,11 @@ final:
 #pop function
 pop:			
 	#check if stack is empty
-    beq $t2,0,invalid
+    	beq $t2,0,invalid
 	#decrease values in stack by 1
 	sub $t2,$t2,1	
 	#load value at the top of the stack
-    lw $v0,0($sp)	
+    	lw $v0,0($sp)	
 	#increase stack pointer by 4
 	add $sp,$sp,4	
 	#return where called
@@ -131,74 +135,74 @@ pop:
 #calc function
 calc:	
 	#check value of ch and perform calculation
-    beq $a1, '+', plus					
-    beq $a1, '-', minus
-    beq $a1, '*', times
-    beq $a1, '/', divide
-    j end
+    	beq $a1, '+', plus					
+    	beq $a1, '-', minus
+    	beq $a1, '*', times
+    	beq $a1, '/', divide
+    	j end
 
 plus:	
 	#x1 + x2
-    add $v0, $a2, $a0					
-    j end
+   	add $v0, $a2, $a0					
+    	j end
 
 minus:
 	#x1 - x2
-    sub $v0, $a2, $a0					
-    j end
+    	sub $v0, $a2, $a0					
+    	j end
 
 times:
 	# x1 * x2
-    mul $v0, $a2, $a0					
-    j end
+    	mul $v0, $a2, $a0					
+    	j end
 
 divide:
 	#if x2 != 0 else goto label divide_by_zero
-    beq $a0, 0, divide_by_zero	
+    	beq $a0, 0, divide_by_zero	
 	#x1 / x2
-    div $v0, $a2, $a0					
-    j end
+    	div $v0, $a2, $a0					
+    	j end
 
 divide_by_zero:
 	#print mynhma 4
-    li $v0, 4							
-    la $a0, error_div
-    syscall
+    	li $v0, 4							
+    	la $a0, error_div
+    	syscall
 	
 	#goto exit
-    j exit								
+   	j exit								
 
 end:
 	#return where called
-    jr $ra								
+    	jr $ra								
 	
 #push function
 push:		
 	#check if stack is full
-    beq $t2,20,full	
+   	beq $t2,20,full	
 	#increase values in stack by 1
 	add $t2,$t2,1	
 	#decrease stack pointer by 4
-    add $sp, $sp,-4			
+    	add $sp, $sp,-4			
 	#store value at the top of the stack
 	sw $a0,0($sp)
 	#return where called					
-    jr $ra								
+    	jr $ra								
 
 invalid:
 	#print mynhma 2
-    li $v0, 4							
-    la $a0, error_msg
-    syscall 
+    	li $v0, 4							
+    	la $a0, error_msg
+    	syscall 
 	
 	#goto exit
 	j exit								
 	
 full:
 	#print mynhma 3
-    li $v0, 4							
-    la $a0, full_stack
-    syscall
+    	li $v0, 4							
+   	la $a0, full_stack
+    	syscall
 	
 	#goto exit
 	j exit								
