@@ -130,7 +130,7 @@ pop:
 	#increase stack pointer by 4
 	add $sp,$sp,4	
 	#return where called
-    jr $ra								
+    	jr $ra								
 
 #calc function
 calc:	
