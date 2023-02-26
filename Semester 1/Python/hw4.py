@@ -255,11 +255,10 @@ def place_blinker(board, p = (0,0)):
     ⬜⬜⬜⬜⬛
     """
     """GRAPSTE TON KWDIKA SAS EDW."""
-    set_alive(board, p, True)
     i, j = p
-    for k in range(2):
-        set_alive(board, (i+1,j),True)
-        i += 1
+    for k in range(3):
+        set_alive(board, (i+k,j),True)
+
 
 def place_glider(board, p = (0,0)):
     """Topo8etisi glider.
