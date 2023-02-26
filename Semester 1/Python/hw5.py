@@ -63,13 +63,13 @@ class DayCounter(CyclicCounter):
     """
     _days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday',\
             'Thursday', 'Friday', 'Saturday']
+
     def __init__(self, day = 'Sunday'):
         index = self._days.index(day)
         super().__init__(len(self._days), index)
         
     def __str__(self):
         return self._days[int(super().__str__())]
-
 
 
 #-------------------- Askisi 3 ----------------------------
