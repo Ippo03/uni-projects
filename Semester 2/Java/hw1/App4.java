@@ -23,7 +23,6 @@ class App4 {
 			n2 = sum;
 			sum = n1 + n2;
 		}
-		
 	}
 }
 

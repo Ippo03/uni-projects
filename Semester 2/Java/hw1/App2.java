@@ -17,7 +17,7 @@ class App2 {
 		int Min = 0;
 		Scanner in = new Scanner(System.in);
 		System.out.print("Give a number: ");
-	    int number = in.nextInt();
+	    	int number = in.nextInt();
 		while (number != 0){
 			Items = Items + 1;
 			Sum = Sum + number;

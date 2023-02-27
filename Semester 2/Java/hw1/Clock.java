@@ -76,7 +76,7 @@ class Clock {
 		else {
 			time = time + s;
 		}
-
+		System.out.println(time);
 		return time;
 	} 
 } 
