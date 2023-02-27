@@ -12,7 +12,7 @@ class App1_2 {
 	    	for(int i = 1; i <= n; i++){
 			fact = fact*i;
         	}
-	    return fact;	
+	    	return fact;	
 	}
 
 	public static void main(String args[]){

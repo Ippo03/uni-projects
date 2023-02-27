@@ -49,11 +49,11 @@ class Clock {
 				this.m = 0;
 				this.h = this.h+1;
 			  }
-			}
+		}
 		if (this.h == 24){
 			this.h = 0;
 		  }
-		}
+	}
 		
 
 	public String toString(){
