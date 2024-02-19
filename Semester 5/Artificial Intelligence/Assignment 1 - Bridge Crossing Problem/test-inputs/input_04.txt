@@ -1,0 +1,20 @@
+# This .txt file contains the default input for the bridge crossing problem. You can experiment by changing the value!
+# Be careful: 1) Comments start with #, 2) Valid lines contain a label(string) and value(integer) pair
+
+# Enter the total time needed for the family to cross the bridge
+Total-Time 133
+
+# Enter the name and the speed of the family members
+Toddler 1
+Boy 2
+Girl 2
+Teen 3
+Man 6
+Woman 8
+Grandma 12
+Grandad 24
+GreatGrandad 40
+GreatGrandma 35
+
+# Dont change the following line
+END

@@ -1,0 +1,12 @@
+# This .txt file contains a scenario for the bridge crossing problem.
+# Total-Time and family members speed are given. Comments start with #.
+
+Total-Time 23
+
+Kid 2
+Teenager 4
+Adult 5
+Elder 10
+
+# Don't change the following line
+END
