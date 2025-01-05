@@ -1,0 +1,1 @@
+The main project for the "Information Systems Development" course is available [here](https://github.com/Ippo03/Guidely).
