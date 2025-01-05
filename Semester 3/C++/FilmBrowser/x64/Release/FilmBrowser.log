@@ -1,0 +1,33 @@
+﻿  Browser.cpp
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\Browser.cpp(10,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\Browser.cpp(11,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Button.cpp
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\Button.cpp(8,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\Button.cpp(9,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\Button.cpp(51,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\Button.cpp(52,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\Button.cpp(89,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\Button.cpp(90,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Dock.cpp
+  Line.cpp
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\Line.cpp(9,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\Line.cpp(10,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\Line.cpp(69,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\Line.cpp(70,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  main.cpp
+  Spinner.cpp
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\Spinner.cpp(9,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\Spinner.cpp(10,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  TextField.cpp
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\TextField.cpp(10,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\TextField.cpp(11,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\TextField.cpp(56,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\TextField.cpp(57,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\TextField.cpp(100,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ippok\Desktop\FilmBrowser_SGG\FilmBrowser\TextField.cpp(101,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Generating code
+  1213 of 1217 functions (99.7%) were compiled, the rest were copied from previous compilation.
+    672 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  FilmBrowser.vcxproj -> C:\Users\ippok\Desktop\FilmBrowser_SGG\bin\FilmBrowser.exe
