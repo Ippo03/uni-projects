@@ -1,0 +1,1 @@
+The main project for the "Software Engineering" course is available [here](https://github.com/Ippo03/eventhub)
