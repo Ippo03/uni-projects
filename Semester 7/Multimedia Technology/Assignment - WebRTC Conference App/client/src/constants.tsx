@@ -1,0 +1,1 @@
+export const MEETING_ID_LENGTH = 5;
