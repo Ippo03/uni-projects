@@ -1,0 +1,37 @@
+# Core setup
+pip
+nest_asyncio
+python-dotenv
+helper-utils
+
+# PyTorch & Transformers ecosystem
+torch
+sentence-transformers
+transformers
+git+https://github.com/huggingface/transformers
+git+https://github.com/huggingface/peft.git
+git+https://github.com/huggingface/accelerate.git
+git+https://github.com/huggingface/trl.git
+bitsandbytes
+sentencepiece
+
+# Scraping & Data Processing
+beautifulsoup4
+
+# PDF processing
+pdfplumber
+
+# Langchain & Vector Store
+langchain
+langchain-community
+langchain-huggingface
+langchain-text-splitters
+langchainhub
+langchain-chroma
+
+# SQLite support for chroma
+# pysqlite3-binary
+
+# Retrieval models
+rank_bm25
+nltk
